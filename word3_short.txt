@@ -1,0 +1,265 @@
+array assign array():::::= param1 [,param2] [,…]
+array delete array:::::([index]) [For Count] [, expression]
+array insert array:::::([index]) [For Count] [, expression]
+array scan array:::::([index]) [For Count] [, FROM start TO End] [, Collate {UCASE | cstring}], expression, TO lvar&   'String Array
+array scan array:::::([index]) [For Count], expression, TO lvar&   'Numeric array
+clipboard get bitmap:::::[TO] ClipVar [, ClipResult]
+clipboard get oemtext:::::[TO] StrgVar [, ClipResult]
+clipboard get text:::::[TO] StrgVar [, ClipResult]
+clipboard get unicode:::::[TO] StrgVar [, ClipResult]
+clipboard set bitmap:::::ClipHndl [, ClipResult]
+clipboard set oemtext:::::StrgExpr [, ClipResult]
+clipboard set text:::::StrgExpr [, ClipResult]
+clipboard set unicode:::::StrgExpr [, ClipResult]
+combobox find exact:::::hDlg, id&, item&, StrExpr TO datav&
+combobox get count:::::hDlg, id& TO datav&
+combobox get selcount:::::hDlg, id& TO datav&
+combobox get select:::::hDlg, id& TO datav&
+combobox get state:::::hDlg, id&, item& TO datav&
+combobox get text:::::hDlg, id& [,item&] TO txtv$
+combobox get user:::::hDlg, id&, item& TO datav&
+combobox set text:::::hDlg, id&, item&, StrExpr
+combobox set user:::::hDlg, id&, item&, NumExpr
+control add button:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add check3state:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]Control Add Checkbox, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add combobox:::::, hDlg, id&, [items$()], x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add frame:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]]
+control add graphic:::::, hDlg, id&, "", x&, y&, wide&, high&[, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add image:::::, hDlg, id&, image$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add imagex:::::, hDlg, id&, image$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add imgbutton:::::, hDlg, id&, image$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add imgbuttonx:::::, hDlg, id&, image$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add label:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add line:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add listbox:::::, hDlg, id&, [items$()], x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add listview:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add option:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add progressbar:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add scrollbar:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add statusbar:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add tab:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add textbox:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add toolbar:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control add treeview:::::, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control get check:::::hDlg, id& TO lResult&
+control get client:::::hDlg, id& TO wide&, high&
+control get loc:::::hDlg, id& TO x&, y&
+control get size:::::hDlg, id& TO wide&, high&
+control get text:::::hDlg, id& TO txt$
+control get user:::::hDlg, id&, index& TO retvar&
+control set check:::::hDlg, id&, checkstate&
+control set client:::::hDlg, id&, wide&, high&
+control set color:::::hDlg, id&, foreclr&, backclr&
+control set focus:::::hDlg, id&
+control set font:::::hDlg, id&, fonthndl&
+control set image:::::hDlg, id&, newimage$
+control set imagex:::::hDlg, id&, newimage$
+control set imgbutton:::::hDlg, id&, newimage$
+control set imgbuttonx:::::hDlg, id&, newimage$
+control set loc:::::hDlg, id&, x&, y&
+control set option:::::hDlg, id&, minid&, maxid&
+control set size:::::hDlg, id&, wide&, high&
+control set text:::::hDlg, id&, txt$
+control set user:::::hDlg, id&, index&, usrval&
+control show state:::::hDlg, id&, showstate& [TO lResult&]
+declare callback function:::::ProcName [[()] AS LONG]
+declare thread function:::::ProcName (BYVAL var AS (LONG | Dword}) AS {LONG | Dword}
+desktop get client:::::TO ncWidth&, ncHeight&
+desktop get loc:::::TO x&, y&
+desktop get size:::::TO ncWidth&, ncHeight&
+dialog end hdlg:::::[, lResult&]
+dialog get client:::::hDlg TO wide&, high&
+dialog get loc:::::hDlg TO x&, y&
+dialog get size:::::hDlg TO x&, y&
+dialog get text:::::hDlg TO titletext$
+dialog get user:::::hDlg, index& TO retvar&
+dialog set client:::::hDlg, x&, y&
+dialog set color:::::hDlg, foreclr&, backclr&
+dialog set icon:::::hDlg, newicon$
+dialog set loc:::::hDlg, x&, y&
+dialog set size:::::hDlg, wide&, high&
+dialog set text:::::hDlg, titletext$
+dialog set user:::::hDlg, index&, usrval&
+dialog show modal:::::hDlg [[,] Call CallBack] [TO lResult&]
+dialog show modeless:::::hDlg [[,] Call CallBack] [TO lResult&]
+dialog show state:::::hDlg, showstate& [TO lResult&]
+gosub dword dwpointer:::::
+graphic bitmap load:::::BmpName$, nWidth&, nHeight& [,stretch&] TO hBmp???
+graphic bitmap new:::::nWidth&, nHeight& TO hBmp???
+graphic chr size:::::TO ncWidth!, ncHeight!
+graphic get bits:::::TO bitvar$
+graphic get client:::::TO ncWidth!, ncHeight!
+graphic get dc:::::TO hDC???
+graphic get lines:::::TO linecount&
+graphic get loc:::::TO x&, y&
+graphic get mix:::::TO mixmode&
+graphic get pixel:::::(x!, y!) TO rgbColor&
+graphic get pos:::::TO x!, y!
+graphic get ppi:::::TO ncWidth&, ncHeight&
+graphic get scale:::::TO x1!, y1!, x2!, y2!
+graphic line input:::::["prompt"]  string_variable
+graphic scale pixels:::::
+graphic set bits:::::bitexpr$
+graphic set focus:::::
+graphic set font:::::fonthndl&
+graphic set loc:::::x&, y&
+graphic set mix:::::mode&
+graphic set pixel:::::[Step] (x!, y!) [, rgbColor&]
+graphic set pos:::::[Step] (x!, y!)
+graphic text size:::::txt$ TO nWidth!, nHeight!
+graphic window click:::::[hwin&] TO click&, x!, y!
+graphic window end:::::
+imagelist add bitmap:::::hLst, Bmp$ [,Msk$] [TO data&]
+imagelist add bitmap:::::hLst, hBmp [,hMsk] [TO data&]
+imagelist add icon:::::hLst, hIcn [TO data&]
+imagelist add icon:::::hLst, Icn$ [TO data&]
+imagelist add masked:::::hLst, Bmp$, rgb& [TO data&]
+imagelist add masked:::::hLst, hBmp, rgb& [TO data&]
+imagelist get count:::::hLst TO data&
+imagelist kill hlst:::::
+imagelist new bitmap:::::width&, height&, depth&, initial& TO hLst
+imagelist new icon:::::width&, height&, depth&, initial& TO hLst
+imagelist set overlay:::::hLst, image&, overlay&
+listbox find exact:::::hDlg, id&, item&, StrExpr TO datav&
+listbox get count:::::hDlg, id& TO datav&
+listbox get selcount:::::hDlg, id& TO datav&
+listbox get select:::::hDlg, id& [,item&] TO datav&
+listbox get state:::::hDlg, id&, item& TO datav&
+listbox get text:::::hDlg, id& [,item&] TO txtv$
+listbox get user:::::hDlg, id&, item& TO datav&
+listbox set text:::::hDlg, id&, item&, StrExpr
+listbox set user:::::hDlg, id&, item&, NumExpr
+listview delete column:::::hDlg, id&, col&
+listview delete item:::::hDlg, id&, row&
+listview find exact:::::hDlg, id&, row&, StrExpr TO datav&
+listview fit content:::::hDlg, id&, col&
+listview fit header:::::hDlg, id&, col&
+listview get column:::::hDlg, id&, col& TO datav&
+listview get count:::::hDlg, id& TO datav&
+listview get header:::::hDlg, id&, col& TO txtv$
+listview get mode:::::hDlg, id& TO datav&
+listview get selcount:::::hDlg, id& TO datav&
+listview get select:::::hDlg, id& [,row&] TO datav&
+listview get state:::::hDlg, id&, row&, col& TO datav&
+listview get stylexx:::::hDlg, id& TO datav&
+listview get text:::::hDlg, id&, row&, col& TO txtv$
+listview get user:::::hDlg, id&, row& TO datav&
+listview insert column:::::hDlg, id&, col&, StrExpr, width&, format&
+listview insert item:::::hDlg, id&, row&, image&, StrExpr
+listview set column:::::hDlg, id&, col&, NumExpr
+listview set header:::::hDlg, id&, col&, StrExpr
+listview set image:::::hDlg, id&, row&, NumExpr
+listview set image2:::::hDlg, id&, row&, NumExpr
+listview set imagelist:::::hDlg, id&, hLst, NumExpr
+listview set mode:::::hDlg, id&, NumExpr
+listview set overlay:::::hDlg, id&, row&, NumExpr
+listview set stylexx:::::hDlg, id&, NumExpr
+listview set text:::::hDlg, id&, row&, col&, StrExpr
+listview set user:::::hDlg, id&, row&, NumExpr
+menu add popup:::::, hMenu, txt$, hPopup, state& [, AT [BYCMD] pos&]
+menu add string:::::, hMenu, txt$, id&, state& [, AT [BYCMD] pos&] [, Call
+menu draw bar:::::hDlg
+menu get state:::::hMenu, [BYCMD] pos& TO state&
+menu get text:::::hMenu, [BYCMD] pos& TO txt$
+menu new bar:::::TO hMenu
+menu new popup:::::TO hPopup
+menu set state:::::hMenu, [BYCMD] pos&, state&
+menu set text:::::hMenu, [BYCMD] pos&, txt$
+on error goto:::::{Label | line_number}
+on error goto:::::0
+on error resume:::::Next
+process get priority:::::TO lResult&
+process set priority:::::Priority&
+progressbar get pos:::::hDlg, id& TO datav&
+progressbar get range:::::hDlg, id& TO LoDatav&, HiDatav&
+progressbar set pos:::::hDlg, id&, pos&
+progressbar set range:::::hDlg, id&, lolimit&, hilimit&
+progressbar set step:::::hDlg, id&, step&
+scrollbar get pagesize:::::hDlg, id& TO datav&
+scrollbar get pos:::::hDlg, id& TO datav&
+scrollbar get range:::::hDlg&, id& TO LoDatav&, HiDatav&
+scrollbar get trackpos:::::hDlg, id& TO datav&
+scrollbar set pagesize:::::hDlg, id&, page&
+scrollbar set pos:::::hDlg, id&, pos&
+scrollbar set range:::::hDlg, id&, lolimit&, hilimit&
+statusbar set parts:::::hDlg, id&, x& [,x&...]
+statusbar set text:::::hDlg, id&, item&, style&, text$
+tab get count:::::hDlg, id& TO datav&
+tab get dialog:::::hDlg, id&, page& TO Hndlv&
+tab get select:::::hDlg, id& TO datav&
+tab insert page:::::hDlg, id&, page&, image&, text$ [Call CallBack] TO Hndlv&
+tab set imagelist:::::hDlg, id&, hLst
+tcp open port:::::T p& | srvc$} AT host$ AS [#] fNum& [TIMEOUT timeoutval&] As a server:
+tcp open server:::::[Addr ip&] {PORT p& | srvc$} AS [#] fNum& [TIMEOUT timeoutval&]
+thread close hthread:::::TO lResult&
+thread create funcname:::::(param) [StackSize,] [Suspend] TO hThread
+thread get priority:::::hThread TO lResult&
+thread resume hthread:::::TO lResult&
+thread set priority:::::hThread, Priority&
+thread status hthread:::::TO lResult&
+thread suspend hthread:::::TO lResult&
+toolbar add button:::::hDlg, id&, image&, cmd&, style&, text$ [AT item&]
+toolbar add separator:::::hDlg, id&, size& [AT item&]
+toolbar delete button:::::hDlg, id&, [BYCMD] item&
+toolbar get count:::::hDlg, id& TO datav&
+toolbar get state:::::hDlg, id&, [BYCMD] item& TO datav&
+toolbar set imagelist:::::hDlg, id&, hLst, type&
+toolbar set state:::::hDlg, id&, [BYCMD] item&, state&
+treeview get bold:::::hDlg, id&, hItem TO datav&
+treeview get check:::::hDlg, id&, hItem TO datav&
+treeview get child:::::hDlg, id&, hItem TO datav&
+treeview get count:::::hDlg, id& TO datav&
+treeview get expanded:::::hDlg, id&, hItem TO datav&
+treeview get next:::::hDlg, id&, hItem TO datav&
+treeview get parent:::::hDlg, id&, hItem TO datav&
+treeview get previous:::::hDlg, id&, hItem TO datav&
+treeview get root:::::hDlg, id& TO datav&
+treeview get select:::::hDlg, id& TO datav&
+treeview get text:::::hDlg, id&, hItem TO txtv$
+treeview get user:::::hDlg, id&, hItem TO datav&
+treeview insert item:::::hDlg, id&, hPrnt, hIAftr, image&, simage&, txt$ TO hItem
+treeview set bold:::::hDlg, id&, hItem, flag&
+treeview set check:::::hDlg, id&, hItem, flag&
+treeview set expanded:::::hDlg, id&, hItem, flag&
+treeview set imagelist:::::hDlg, id&, hLst
+treeview set text:::::hDlg, id&, hItem, txt$
+treeview set user:::::hDlg, id&, hItem, NumExpr
+window get id:::::hWin TO datav&
+window get parent:::::hWin TO datav&
+xprint chr size:::::TO ncWidth!, ncHeight!
+xprint get client:::::TO ncWidth!, ncHeight!
+xprint get collate:::::TO collatestatus&
+xprint get colormode:::::TO colormode&
+xprint get copies:::::TO copycount&
+xprint get dc:::::TO hDC???
+xprint get duplex:::::TO duplexstatus&
+xprint get lines:::::TO linecount&
+xprint get margin:::::TO nLeft!, nTop!, nRight!, nBottom!
+xprint get mix:::::TO mode&
+xprint get orientation:::::TO orent&
+xprint get paper:::::TO papertype&
+xprint get papers:::::TO papers$
+xprint get pixel:::::(x!, y!) TO rgbColor&
+xprint get pos:::::TO x!, y!
+xprint get ppi:::::TO x&, y&
+xprint get quality:::::TO qual&
+xprint get scale:::::TO x1!, y1!, x2!, y2!
+xprint get size:::::TO nWidth!, nHeight!
+xprint get tray:::::TO papertray&
+xprint get trays:::::TO trays$
+xprint polygon points:::::[, [rgbColor&] [, [fillcolor&] [, [fillstyle&] [,fillmode&]]]]
+xprint polyline points:::::[, rgbColor&]
+xprint render bmpname$:::::, (x1!, y1!)-(x2!, y2!)
+xprint set collate:::::numrexp
+xprint set colormode:::::numrexp
+xprint set copies:::::numrexp
+xprint set duplex:::::numrexp
+xprint set font:::::fonthndl&
+xprint set mix:::::mode&
+xprint set orientation:::::orent&
+xprint set paper:::::papertype&
+xprint set pixel:::::[Step] (x!, y!) [, rgbColor&]
+xprint set pos:::::[Step] (x!, y!)
+xprint set quality:::::qual&
+xprint set tray:::::numrexp
+xprint text size:::::txt$ TO nWidth!, nHeight!

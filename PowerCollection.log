@@ -1,0 +1,22 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2011 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  C:\ClasPB\Test\PowerCollection.bas   {17 total lines}
+Target compilation:  PowerCollection.EXE
+Compile time:  0.1 seconds, at 20400 lines/minute
+
+1760 bytes compiled code, 16492 bytes RTLibrary,
+56 bytes string literals, and 2704 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 22016 bytes   Memory image: 19252 bytes.
+
+Component Files:
+----------------
+C:\ClasPB\Test\PowerCollection.bas
+
+
+Code Extracted:
+---------------
+<NONE>

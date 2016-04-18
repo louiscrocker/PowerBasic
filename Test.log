@@ -1,0 +1,23 @@
+Classic PowerBASIC for Windows
+Classic PB/Win  Version 8.05 
+Copyright (c) 1996-2009 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  C:\ClasPB\Test\Test.bas   {58511 total lines}
+Target compilation:  Test.exe
+Compile time:  0.2 seconds, at 17553300 lines/minute
+
+5476 bytes compiled code, 14221 bytes RTLibrary,
+388 bytes string literals, and 2464 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 26624 bytes   Memory image: 17073 bytes.
+
+Component Files:
+----------------
+C:\CLASPB\TEST\TEST.BAS
+C:\CLASPB\WINAPI\WIN32API.INC
+C:\CLASPB\WINAPI\COMMCTRL.INC
+C:\CLASPB\WINAPI\PBFORMS.INC
+
+

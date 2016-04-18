@@ -1,0 +1,21 @@
+Classic PowerBASIC Console Compiler
+Classic PB/CC   Version 4.06 
+Copyright (c) 1998-2010 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  C:\_svn\UTILIT~1\POWERB~1\ADOTest\ADOTest.bas   {1049 total lines}
+Target compilation:  ADOTest.exe
+Compile time:  0.1 seconds, at 1258800 lines/minute
+
+1764 bytes compiled code, 10929 bytes RTLibrary,
+400 bytes string literals, and 2224 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 16384 bytes   Memory image: 13553 bytes.
+
+Component Files:
+----------------
+C:\_SVN\UTILIT~1\POWERB~1\ADOTEST\ADOTEST.BAS
+ADO.INC
+
+

@@ -1,0 +1,7 @@
+PowerBASIC 10 for Windows
+Copyright (c) 1996-2011 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Error 493 in C:\ClasPB\Test\OpenGLTest.bas(4:014):  Compiler file not found/accessible
+  Line 4:     #INCLUDE "gl.inc"  

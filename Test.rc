@@ -1,0 +1,53 @@
+//#PBForms Created v1.52
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// The first line in this file is a PB/Forms comment. It   
+// should ALWAYS be the first line of the file.  Other     
+// PB/Forms comments are placed at the beginning and end   
+// of "Named Blocks" of code that should be edited within  
+// PB/Forms only.  Do not edit or delete these comments or 
+// PB/Forms will not be able to reread the file correctly. 
+// See the PB/Forms documentation for more information.    
+// Named blocks begin like this:    //#PBFORMS BEGIN ...   
+// Named blocks end like this:      //#PBFORMS END ...     
+// Feel free to make changes anywhere else in the file.    
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include "Resource.h"
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  ** Constants **
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//#PBForms Begin Constants
+//#PBForms End Constants
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  ** Version Info **
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//#PBForms Begin VersionInfo
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0x0
+ FILEOS VOS_WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileVersion", "1.00.0001\0"
+            VALUE "LegalCopyright", "Copyright \251 2011\0"
+            VALUE "ProductVersion", "1.00.0001\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+//#PBForms End VersionInfo
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

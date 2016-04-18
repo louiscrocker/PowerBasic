@@ -1,0 +1,185 @@
+#com doc:::::"This is specific information to be used in the Help String"
+#com guid:::::Guid$("{20000000-2000-2000-2000000000000002}")
+#com help:::::"MyProg.chm", &H1E00
+#com name:::::"LibName", 3.32
+#com tlib:::::On|OFF
+#compile exe:::::["filename{.exe|.dll}"]
+#compile dll:::::["filename{.exe|.dll}"]
+#compiler pbcc:::::[version] [, [PBCC | PBWIN] [version]] [, ...]
+#compiler pbwin:::::[version] [, [PBCC | PBWIN] [version]] [, ...]
+#debug code:::::[On|+ | OFF|-]
+#debug display:::::[On|+ | OFF|-]
+#debug error:::::[On|+ | OFF|-]
+#debug print:::::string_expression
+#include once:::::"filespec"
+accel attach:::::hDlg, AccelTbl() TO hAccelHandle
+array sort:::::dArray([index]) [For Count] [,FROM start TO End] [,Collate {UCASE | cstring}] [,TAGARRAY tarray()] [,{ASCEND | DESCEND}]  'string sort
+array sort:::::darray([index]) [For Count] [,TAGARRAY tarray()] ,USING custfunc()  'custom sort
+array sort:::::darray([index]) [For Count] [,TAGARRAY tarray()] [,{ASCEND | DESCEND}]   'numeric sort
+bit calc:::::intvar, bitnumber, calcexprflag = Bit(intvar, bitnumber)
+bit reset:::::intvar, bitnumber
+bit set:::::intvar, bitnumber
+bit toggle:::::intvar, bitnumber
+call dword:::::dwpointer [{BDECL | CDECL | SDECL} ()]
+call dword:::::dwpointer USING abc([arguments]) [TO result_var]
+call procname:::::[([arguments])] [TO result_var]
+class name:::::[$GUID]  [AS COM | AS EVENT]
+clipboard reset:::::[, ClipResult]
+combobox add:::::hDlg, id&, StrExpr
+combobox delete:::::hDlg, id&, item&
+combobox find:::::hDlg, id&, item&, StrExpr TO datav&
+combobox insert:::::hDlg, id&, item&, StrExpr
+combobox reset:::::hDlg, id&
+combobox select:::::hDlg, id&, item&
+combobox unselect:::::hDlg, id&
+comm close:::::[#] hComm [, [#] hComm ...]
+comm line:::::[Input] [#] hComm, string_var
+comm open:::::"COMn" AS [#] hComm
+comm print:::::[#] hComm, string_expression [;]
+comm recv:::::[#] hComm, count&, string_var
+comm reset:::::[#] hComm, FLOW
+comm send:::::[#] hComm, string_expression
+comm set:::::[#] hComm, Comfunc = value
+control add :::::classname$, hDlg, id&, txt$, x, y, xx, yy [, [style&] [,[exstyle&]]] [[,] Call CallBack]
+control disable:::::hDlg, id&
+control enable:::::hDlg, id&
+control handle:::::hDlg, id& TO hCtl&
+control kill:::::hDlg, id&
+control post:::::hDlg, id&, Msg&, wParam&, lParam&
+control redraw:::::hDlg, id&
+control send:::::hDlg, id&, Msg&, wParam&, lParam& [TO lResult&]
+dialog disable:::::hDlg
+dialog doevents:::::[sleep&] [TO count&]
+dialog enable:::::hDlg
+dialog font:::::[DEFAULT] fontname$ [,points&, style&, charset&]
+dialog new:::::[Pixels, | Units,] hParent, title$, [x&], [y&], xx&, yy& [,[style&] [, [exstyle&]]] [,] TO hDlg
+dialog pixels:::::hDlg, x&, y& TO Units xx&, yy&
+dialog post:::::hDlg, Msg&, wParam&, lParam&
+dialog redraw:::::hDlg
+dialog send:::::hDlg, msg&, wParam&, lParam& [TO lResult&]
+dialog units:::::hDlg, x&, y& TO Pixels xx&, yy&
+display browse:::::[hParent], [xpos], [ypos], title$, start$, flags TO folder$
+display color:::::[hParent], [xpos], [ypos], firstcolor, custcolors, flags TO
+display font:::::[hParent], [xpos], [ypos], defname$, defpoints&, defstyle&,flags& TO fontname$, points&, style& [,color&, charset&]
+display openfile:::::[hParent], [xpos], [ypos], title$, folder$, filter$, start$, defextn$, flags TO filevar$ [,countvar&]
+display savefile:::::[hParent], [xpos], [ypos], title$, folder$, filter$, start$, defext$, flags TO filevar$ [,countvar&]
+do until:::::expression
+do while:::::expression
+event source:::::InterfaceName
+events end:::::oEvent
+events from:::::oSource Call oEvent
+field reset:::::fieldvar [, ...]
+field string:::::fieldvar [, ...]
+font end:::::fonthndl&
+font new:::::fontname$ [,points!, style&, charset&, pitch&, escapement&] TO fhndl
+globalmem alloc :::::Count TO vHndl
+globalmem free :::::mHndl TO vHndl
+globalmem lock :::::mHndl TO vPtr
+globalmem size :::::mHndl TO vSize
+globalmem unlock:::::mHndl TO vLocked
+graphic arc:::::(x1!, y1!) - (x2!, y2!), arcStart!, arcEnd! [, rgbColor&]
+graphic attach:::::hWin, Id [, Redraw]
+graphic box:::::(x1!, y1!) - (x2!, y2!) [, [corner&] [, [rgbColor&] [,[fillcolor&] [, [fillstyle&]]]]]
+graphic clear:::::[rgbColor& [, fillstyle&]]
+graphic color:::::foreground& [, background&]
+graphic copy:::::hbmpSource???, id& [, style&]
+graphic copy:::::hbmpSource???, id& TO (x!, y!) [, style&]
+graphic copy:::::hbmpSource???, id&, (x1!, y1!)-(x2!, y2!) TO (x!, y!) [,style%]
+graphic ellipse:::::(x1!, y1!) - (x2!, y2!) [, [rgbColor&] [,[fillcolor&] [, [fillstyle&]]]]
+graphic font:::::fontname$ [,points&, style&]
+graphic imagelist:::::(x!,y!), hLst, index&, overlay&, style&
+graphic inkey$:::::TO string_variable
+graphic input:::::[prompt,] varlist
+graphic instat:::::TO numeric_variable
+graphic line:::::[Step] [(x1!, y1!)] - [Step] (x2!, y2!)[, rgbColor&]
+graphic paint:::::[BORDER | Replace] [Step] (x!, y!) [, [rgbFill&] [,[rgbBorder&] [, [fillstyle&]]]]
+graphic pie:::::(x1!, y1!) - (x2!, y2!), arcStart!, arcEnd! [, [rgbColor&] [,[fillcolor&] [, [fillstyle&]]]]
+graphic polygon:::::points [,[rgbColor&] [, [fillcolor&] [,[fillstyle&] [,fillmode&]]]]
+graphic polyline:::::points [, rgbColor&]
+graphic print:::::expr [; expr] [;]
+graphic render:::::BmpName$, (x1!, y1!)-(x2!, y2!)
+graphic save:::::BmpName$
+graphic scale:::::(x1!, y1!) - (x2!, y2!)
+graphic stretch:::::hbmpSource???, id&, (x1!, y1!)-(x2!, y2!) TO (x3!,y3!)-(x4!,y4!) [, mix&, stretch&]
+graphic style:::::linestyle&
+graphic waitkey$:::::[TO string_variable]
+graphic width:::::linewidth&
+graphic window:::::caption$, x&, y&, nWidth&, nHeight& TO hWin???
+host addr:::::[hostname$] TO ip&
+host addr:::::(index&) TO ip&
+host name:::::[ip&] TO hostname$
+line input:::::#filenum&, Arr$() [RECORDS rcds] [TO Count]
+line input:::::#filenum&, string_variable
+listbox add:::::hDlg, id&, StrExpr
+listbox delete:::::hDlg, id&, item&
+listbox find:::::hDlg, id&, item&, StrExpr TO datav&
+listbox insert:::::hDlg, id&, item&, StrExpr
+listbox reset:::::hDlg, id&
+listbox select:::::hDlg, id&, item&
+listbox unselect:::::hDlg, id& [,item&]
+listview find:::::hDlg, id&, row&, StrExpr TO datav&
+listview reset:::::hDlg, id&
+listview select:::::hDlg, id&, row&, [col&]
+listview sort:::::hDlg, id&, col& [,options...]
+listview unselect:::::hDlg, id&, row&, [col&]
+listview visible:::::hDlg, id&, row&
+loop until:::::expression
+loop while:::::expression
+lprint attach:::::device$
+macro function:::::macroname [(prm1, prm2, ...)]
+menu attach:::::hMenu, hDlg
+menu delete:::::hMenu, [BYCMD] pos&
+object call:::::Interface.member[.member.] [([[paramname =] param1 [, ...]])] [TO ResultVar]
+object get:::::Interface.member[.member.] [([[paramname =] param1 [, ...]])] TO ResultVar
+object let:::::Interface.member[.member.] [([[paramname =] param1 [, ...]])] = ValueVar
+object raiseevent:::::[Interface.]member[([[paramname =] param1 [, ...]])]
+object set:::::Interface.member[.member.] [([[paramname =] param1 [, ...]])] = ValueVar
+open handle:::::filehandle [For Mode] [ACCESS access] [Lock Lock] AS [#] filenum& [Len = record_size] [BASE = base]
+option explicit :::::
+progressbar step:::::hDlg, id& [,incr&]
+property get:::::|Set Name [<DispID>] [ALIAS "altname"] (var AS Type...) [AS Type]
+property set:::::|Set Name [<DispID>] [ALIAS "altname"] (var AS Type...) [AS Type]
+reset array:::::() [, ...]
+reset array:::::(index) [, ...]
+select case:::::[AS] [LONG | CONST | CONST$] expression
+tab delete:::::hDlg, id&, page&
+tab reset:::::hDlg, id&
+tab select:::::hDlg, id&, page&
+tcp accept:::::[#] fNum& AS newfNum&
+tcp close:::::[#] fNum&
+tcp line:::::[Input] [#] fNum&, Buffer$
+tcp notify:::::[#] fNum&, {Send | Recv | Accept | CONNECT | Close} TO hWnd& As a Client:
+tcp print:::::[#] fNum&, string_expression[;]
+tcp recv:::::[#] fNum&, count&, Buffer$
+tcp send:::::[#] fNum&, string_expression lCount& = ThreadCount
+tix end:::::QuadVar
+trace close :::::
+trace new:::::fname$
+trace off :::::
+trace on:::::
+trace print :::::string_expr
+treeview delete:::::hDlg, id&, hItem
+treeview reset :::::hDlg, id&
+treeview select :::::hDlg, id&, hItem
+treeview unselect:::::hDlg, id&
+type set:::::mainvar = {typevar | stringexpr$} [USING ustring_expression]
+udp close:::::[#] fNum&
+udp notify:::::[#] fNum&, {Send | Recv | Close} TO hWnd& AS wMsg&
+udp open:::::[PORT p&] AS [#] fNum& [TIMEOUT timeoutval&]
+udp recv:::::[#] fNum&, FROM ip&, pNum&, Buffer$
+udp send:::::[#] fNum&, AT ip&, pNum&, string_expression
+xprint arc:::::(x1!, y1!) - (x2!, y2!), arcStart!, arcEnd! [, rgbColor&]
+xprint attach:::::xprint attach {choose | default | printername$} [,jobname$]
+xprint box:::::(x1!, y1!) - (x2!, y2!) [, [corner&] [, [rgbColor&] [,[fillcolor&] [, [fillstyle&]]]]]
+xprint color :::::foreground& [, background&]
+xprint copy :::::hbmpSource???, id& [, style&]
+xprint copy :::::hbmpSource???, id& TO (x!, y!) [, style&]
+xprint copy :::::hbmpSource???, id&, (x1!, y1!)-(x2!, y2!) TO (x!, y!) [,style%]
+xprint ellipse :::::(x1!, y1!) - (x2!, y2!) [, [rgbColor&] [, [fillcolor&] [,[fillstyle&]]]]
+xprint font:::::fontname$ [,points&, style&]
+xprint imagelist:::::(x!,y!), hLst, index&, overlay&, style&
+xprint line:::::[Step] [(x1!, y1!)] - [Step] (x2!, y2!)[, rgbColor&]
+xprint pie :::::(x1!, y1!) - (x2!, y2!), arcStart!, arcEnd! [, [rgbColor&] [,[fillcolor&] [, [fillstyle&]]]]
+xprint stretch :::::Hndl, Id, (x1,y1)-(x2,y2) TO (x3,y3)-(x4,y4) [,Mix,Stretch]
+xprint style :::::linestyle&
+xprint width:::::ncPixels&

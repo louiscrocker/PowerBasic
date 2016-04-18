@@ -1,0 +1,20 @@
+Classic PowerBASIC Console Compiler
+Classic PB/CC   Version 4.06 
+Copyright (c) 1998-2010 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  C:\ClasCC\Test\TestUserTypes.bas   {23 total lines}
+Target compilation:  TestUserTypes.exe
+Compile time:  0.1 seconds, at 27600 lines/minute
+
+356 bytes compiled code, 4376 bytes RTLibrary,
+24 bytes string literals, and 1844 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 8704 bytes   Memory image: 6244 bytes.
+
+Component Files:
+----------------
+C:\CLASCC\TEST\TESTUSERTYPES.BAS
+
+

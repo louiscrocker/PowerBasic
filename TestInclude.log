@@ -1,0 +1,21 @@
+Classic PowerBASIC Console Compiler
+Classic PB/CC   Version 4.06 
+Copyright (c) 1998-2010 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Primary source:  C:\ClasCC\Test\TestInclude.bas   {29 total lines}
+Target compilation:  TestInclude.exe
+Compile time:  0.1 seconds, at 34800 lines/minute
+
+452 bytes compiled code, 4399 bytes RTLibrary,
+52 bytes string literals, and 1872 bytes dgroup.
+Executable stack size:  1048576 bytes.
+Disk image: 8704 bytes   Memory image: 6323 bytes.
+
+Component Files:
+----------------
+C:\CLASCC\TEST\TESTINCLUDE.BAS
+USERS.INC
+
+

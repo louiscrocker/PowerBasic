@@ -1,0 +1,8 @@
+Classic PowerBASIC for Windows
+Classic PB/Win  Version 8.05 
+Copyright (c) 1996-2009 PowerBasic Inc.
+Englewood, Florida USA
+All Rights Reserved
+
+Error 429 in C:\ClasPB\Test\Test2.bas(21:011):  String constant expected
+Line 21: #RESOURCE MANIFEST, 1, "C:\ClasPB\Test\XPTheme.xml"
